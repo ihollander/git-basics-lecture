@@ -1,5 +1,24 @@
 # Git Basics
 
+## Videos
+
+### Git Basics
+
+- [Playlist with all videos](https://www.youtube.com/playlist?list=PLc6AmvC5ZybwWwRHqIrqe0nqaondd1BgD)
+- [Part 1: Intro](https://youtu.be/LSI03cAYspg)
+- [Part 2: Commits](https://youtu.be/390ZJiwStIA)
+- [Part 3: Time Travel](https://youtu.be/iokml3KLL6w)
+- [Part 4: Branches](https://youtu.be/d82u66v_CVw)
+- [Part 5: GitHub](https://youtu.be/gMfBBAdZu4A)
+
+### Git Workflows
+
+- [Playlist with all videos](https://www.youtube.com/playlist?list=PLc6AmvC5Zybw1EkCT4y5eFR7RGI1WJAeJ)
+- [Part 1: Project Setup](https://youtu.be/yeQPCBNYDC4)
+- [Part 2: Adding/Editing Code](https://youtu.be/mswFLxsxSDk)
+- [Part 3: Syncing with GitHub](https://youtu.be/AgZ4OfP_o68)
+- [Part 4: Fixing Merge Conflicts](https://youtu.be/598dYEe9MCc)
+
 ## What is Git?
 
 Git is a **version control system** (VCS).
