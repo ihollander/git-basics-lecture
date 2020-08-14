@@ -11,6 +11,7 @@ Here are a few common scenarios you'll find when working on a project using `git
 - **Scenario**: Two people have made changes to the same file, and git can't automatically merge the changes. How do you fix the merge conflicts?
     - Goto [Fixing Merge Conflicts](#fixing-merge-conflicts)
 
+
 ## Project Setup
 
 - [ ] In the root directory of your project, create a new local git repository: 
@@ -41,7 +42,7 @@ $ git push -u origin master
 
 - [ ] (*optional*) Create an issue on GitHub: Click Issues > New Issue and describe the feature you're building or the bug you're fixing.
 
-- [ ] Create a new branch off of your master branch with the name of the feature:
+- [ ] Create a new branch off of your master branch with the name of the feature. **Make sure you always create a branch** when you're adding new code! **Never** commit directly to the master branch, particularly if you're working with a partner/team.
 
 ```
 $ git checkout -b add-login-screen
