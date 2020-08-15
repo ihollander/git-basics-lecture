@@ -55,15 +55,25 @@ $ git add .
 $ git commit -m 'Implemented login method for User class'
 ```
 
-- [ ] When you've completed the feature, make a final commit and push your code up to GitHub:
+- [ ] When you've completed the feature, make a final commit. If any changes have been made to the master branch, make sure to [sync with the remote](#syncing-with-a-remote) to make sure your code still works with any changes that have been made to master.
+
+- [ ] After that, push your code up to GitHub:
 
 ```
 git push -u origin add-login-screen
 ```
 
-- [ ] On GitHub, find your newly uploaded branch and click 'Compare and pull request'. If you're working with a partner review the code with your partner to go over your changes. Make a comment that describes your changes. If you created an issue for the feature, you can reference that issue in the pull request in the comment.
+- [ ] On GitHub, find your newly uploaded branch and click 'Compare and pull request'. 
+
+![making a pull request](screenshots/compare-and-pr.png)
+
+If you're working with a partner review the code with your partner to go over your changes. Make a comment that describes your changes. If you created an issue for the feature, you can reference that issue in the pull request in the comment.
+
+![pr tools](screenshots/pr-tools.png)
 
 - [ ] After reviewing the code with your partner, if there are no merge conflicts, click 'Merge pull request' then 'Confirm'. At this point, your remote repository's master branch will be updated to include the code from your feature branch. You can safely delete the remote branch from GitHub if you are done with that feature.
+
+![merging a pr](screenshots/merge-pr.png)
 
 - [ ] Now we want to get those remote changes available locally. To update your master branch, you can checkout the master branch and pull down the new code (remember, `git pull` will fetch the new code from your remote, and will also merge the changes into your local branch):
 
@@ -80,6 +90,8 @@ $ git pull
 $ git branch -d add-login-screen
 ```
 
+If you run `git branch -a` you should now see your local branch is no longer there. However you will still see a reference to the remote branch, even if you deleted the remote branch on GitHub. If you want to clean up the removed branch references, you can run `git remote prune origin`.
+
 ## Syncing With a Remote
 
 If you're working on your own branch:
@@ -88,9 +100,32 @@ If you're working on your own branch:
 $ git pull origin master
 ```
 
-This will "fast-forward" any changes to the master branch and make sure your branch has an up-to-date timeline (you can confirm this by running `git log`). Doing this makes it less likely that you'll run into merge conflicts when you are ready to push up your code.
+This will "fast-forward" any changes to the master branch and make sure your branch has an up-to-date timeline (you can confirm this by running `git log`). Doing this makes it less likely that you'll run into merge conflicts when you make a pull request.
+
+If there are merge conflicts after pulling in the code from the `origin master`, make sure to [fix them](#fixing-merge-conflicts) before moving forward. You can tell if there are merge conflicts if you see something like this after running `git pull origin master`:
+
+```
+$ git pull origin master
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), done.
+From github.com:ihollander/mod-1-cli-sample
+ * branch            master     -> FETCH_HEAD
+   a6907d7..2bb2faf  master     -> origin/master
+Auto-merging db/schema.rb
+CONFLICT (content): Merge conflict in db/schema.rb
+Automatic merge failed; fix conflicts and then commit the result.
+```
 
 ## Fixing Merge Conflicts
+
+If you and your partner both edit the same lines of the same file, it's likely you'll end up with a merge conflict. That's ok! We'll show you how to resolve it below.
+
+There are a couple common scenarios where you'll see merge conflicts:
+
+- You're working on a feature branch and you just [synced with the remote master branch](#syncing-with-a-remote), and the new master branch has changes in one of the files you're working on
+- You're making a pull request, but you forgot to sync your feature branch with the remote master branch before pushing up your code.
 
 You can tell if you have a merge conflict when you make a pull request. You'll see something like `Can't automatically merge` when you try to open a pull request. If you continue with the pull request, GitHub will give you the option of using the web editor or command line to resolve merge conflicts. We'll cover the steps for resolving the merge conflict locally below:
 
