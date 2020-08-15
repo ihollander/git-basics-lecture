@@ -98,7 +98,15 @@ If you run `git branch -a` you should now see your local branch is no longer the
 
 ## Syncing With a Remote
 
-If you're working on your own branch:
+If your partner has made some changes to the master branch on GitHub, you should pull in those changes to your feature branch as early as possible to help prevent merge conflicts down the line and make sure your code works with the newest version of your master branch.
+
+- [ ] First, make sure you're on whatever feature branch you've been working in:
+
+```
+$ git checkout readme-edits
+```
+
+- [ ] Then, fetch and merge the code from your remote master branch:
 
 ```
 $ git pull origin master
@@ -106,7 +114,7 @@ $ git pull origin master
 
 This will "fast-forward" any changes to the master branch and make sure your branch has an up-to-date timeline (you can confirm this by running `git log`). Doing this makes it less likely that you'll run into merge conflicts when you make a pull request.
 
-If there are merge conflicts after pulling in the code from the `origin master`, make sure to [fix them](#fixing-merge-conflicts) before moving forward. You can tell if there are merge conflicts if you see something like this after running `git pull origin master`:
+If there are merge conflicts after pulling in the code from the remote master branch, make sure to [fix them](#fixing-merge-conflicts) before moving forward. You can tell if there are merge conflicts if you see something like this after running `git pull origin master`:
 
 ```
 $ git pull origin master
