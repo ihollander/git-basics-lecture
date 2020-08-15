@@ -40,6 +40,8 @@ $ git push -u origin master
 
 ## Adding New Code
 
+### Adding New Code - Setup
+
 - [ ] (*optional*) Create an issue on GitHub: Click Issues > New Issue and describe the feature you're building or the bug you're fixing.
 
 - [ ] Create a new branch off of your master branch with the name of the feature. **Make sure you always create a branch** when you're adding new code! **Never** commit directly to the master branch, particularly if you're working with a partner/team.
@@ -62,6 +64,8 @@ $ git commit -m 'Implemented login method for User class'
 ```
 git push -u origin add-login-screen
 ```
+
+### Adding New Code - Making a PR
 
 - [ ] On GitHub, find your newly uploaded branch and click 'Compare and pull request'. 
 
@@ -127,7 +131,13 @@ There are a couple common scenarios where you'll see merge conflicts:
 - You're working on a feature branch and you just [synced with the remote master branch](#syncing-with-a-remote), and the new master branch has changes in one of the files you're working on
 - You're making a pull request, but you forgot to sync your feature branch with the remote master branch before pushing up your code.
 
-You can tell if you have a merge conflict when you make a pull request. You'll see something like `Can't automatically merge` when you try to open a pull request. If you continue with the pull request, GitHub will give you the option of using the web editor or command line to resolve merge conflicts. We'll cover the steps for resolving the merge conflict locally below:
+You can tell if you have a merge conflict when you make a pull request. You'll see something like `Can't automatically merge` when you try to open a pull request. If you continue with the pull request, GitHub will give you the option of using the web editor or command line to resolve merge conflicts. We'll cover the steps for resolving the merge conflict locally below.
+
+- [ ] First, make sure you're on whatever feature branch you've been working in:
+
+```
+$ git checkout readme-edits
+```
 
 - [ ] To fix the merge conflicts locally, first run:
 
@@ -176,4 +186,4 @@ $ git commit -m 'Fix merge conflict in README'
 $ git push -u origin readme-edits
 ```
 
-- On GitHub, go back to the PR you opened - you should now see that the branch no longer has merge conflicts and can be automatically merged! From here, follow the steps to complete the pull request, and make sure to pull down the updated master branch with the merged code.
+- On GitHub, you can now go through the steps to [make a pull request](#adding-new-code---making-a-pr). Go to the PR you opened - you should now see that the branch no longer has merge conflicts and can be automatically merged! From here, follow the steps to complete the pull request, and make sure to pull down the updated master branch with the merged code.
