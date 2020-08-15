@@ -201,7 +201,7 @@ If I want to fetch changes *and* merge them into my current branch, I can use `$
 - [Resources for Learning Git by GitHub](https://try.github.io/)
 - [Using Git Branches via Atlassian](https://ko.atlassian.com/git/tutorials/using-branches)
 
-![Git Cheet Sheet](https://www.git-tower.com/blog/content/posts/54-git-cheat-sheet/git-cheat-sheet-large01.png)
+![Git Cheet Sheet](https://i.redd.it/8341g68g1v7y.png)
 
 ## Contributors
 
