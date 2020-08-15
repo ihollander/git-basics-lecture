@@ -12,6 +12,7 @@
 - [Part 5: GitHub](https://youtu.be/gMfBBAdZu4A)
 
 ### Git Workflows
+Check out the [WORKFLOWS.md](WORKFLOWS.md) file for more info!
 
 - [Playlist with all videos](https://www.youtube.com/playlist?list=PLc6AmvC5Zybw1EkCT4y5eFR7RGI1WJAeJ)
 - [Part 1: Project Setup](https://youtu.be/yeQPCBNYDC4)
