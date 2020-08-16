@@ -10,6 +10,7 @@
 - [Part 3: Time Travel](https://youtu.be/iokml3KLL6w)
 - [Part 4: Branches](https://youtu.be/d82u66v_CVw)
 - [Part 5: GitHub](https://youtu.be/gMfBBAdZu4A)
+- [Extras: VSCode Tools](https://youtu.be/Rw8MZLn-W6o)
 
 ### Git Workflows
 Check out the [WORKFLOWS.md](WORKFLOWS.md) file for more info!
@@ -19,6 +20,7 @@ Check out the [WORKFLOWS.md](WORKFLOWS.md) file for more info!
 - [Part 2: Adding/Editing Code](https://youtu.be/mswFLxsxSDk)
 - [Part 3: Syncing with GitHub](https://youtu.be/AgZ4OfP_o68)
 - [Part 4: Fixing Merge Conflicts](https://youtu.be/598dYEe9MCc)
+- [Extras: gitignore and Hiding API Keys](https://youtu.be/MxMIUrEsx-M)
 
 ## What is Git?
 
